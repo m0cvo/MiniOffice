@@ -37,7 +37,10 @@ namespace MiniOffice
 
         private void WordBtn_Click(object sender, RoutedEventArgs e)
         {
-            //ToDo
+            //Opens new window for user to work on.
+            Window1 WorkWindow = new Window1();
+            WorkWindow.Show();
+            this.Hide();
         }
 
         private void CalcBtn_Click(object sender, RoutedEventArgs e)
