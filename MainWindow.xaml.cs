@@ -29,5 +29,20 @@ namespace MiniOffice
         {
             Application.Current.Shutdown();
         }
+
+        private void DBaseBtn_Click(object sender, RoutedEventArgs e)
+        {
+            //ToDo
+        }
+
+        private void WordBtn_Click(object sender, RoutedEventArgs e)
+        {
+            //ToDo
+        }
+
+        private void CalcBtn_Click(object sender, RoutedEventArgs e)
+        {
+            //ToDo
+        }
     }
 }
