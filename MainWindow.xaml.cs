@@ -45,8 +45,7 @@ namespace MiniOffice
 
         private void CalcBtn_Click(object sender, RoutedEventArgs e)
         {
-            //Opens a new window as a calculator.
-            
+            //ToDo
         }
     }
 }
