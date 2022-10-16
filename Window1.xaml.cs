@@ -29,7 +29,9 @@ namespace MiniOffice
         private void ExitBtn_Click(object sender, RoutedEventArgs e)
         {
             MessageBox.Show("Goodbye");
-            Application.Current.Shutdown();
+            MainWindow mainWindow = new MainWindow();
+            mainWindow.Show();
+            this.Hide();
         }
         private void NewClick_Selected(object sender, RoutedEventArgs e)
         {
