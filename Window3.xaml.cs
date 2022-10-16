@@ -7,6 +7,9 @@ namespace MiniOffice
     /// <summary>
     /// Interaction logic for Window3.xaml
     /// </summary>
+    /// 
+
+    // Copyright N.Booth 2022 for Mogpie Software
     public partial class Window3 : Window
     {
         public Window3()

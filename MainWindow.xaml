@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:MiniOffice"
         mc:Ignorable="d"
         Title="Mini Office" Height="450" Width="800">
-    <Grid Margin="10"  Background="#FF05DDF9">
+    <Grid Margin="10"  Background="LightBlue">
         <Label Content="Mini Office" HorizontalAlignment="Center" Margin="0,48,0,0" VerticalAlignment="Top" FontSize="20" Foreground="#FF0721FB" RenderTransformOrigin="1.056,0.458"/>
         <Label Content="Copyright N.Booth 2022 for Mogpie" HorizontalAlignment="Center" Margin="0,90,0,0" VerticalAlignment="Top" Foreground="#FF0721FB" FontSize="16"/>
         <Button x:Name="WordBtn" Content="Text Writer" HorizontalAlignment="Left" Margin="95,155,0,0" VerticalAlignment="Top" BorderBrush="#FF0721FB" Click="WordBtn_Click"/>

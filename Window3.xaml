@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MiniOffice"
         mc:Ignorable="d"
-        Title="Calculator" Height="300" Width="220">
+        Title="Calculator" Height="300" Width="250">
     <Grid Background="LightBlue" Height="270" VerticalAlignment="Top">
         <Button Content="7" HorizontalAlignment="Left" Margin="11,115,0,0" VerticalAlignment="Top" Width="46" Height="31" FontSize="18" BorderThickness="2,2,2,1" Click="Button_Click_1">
             <Button.Foreground>
@@ -191,7 +191,7 @@
                 <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.WindowTextColorKey}}"/>
             </Button.Background>
         </Button>
-        <Button Content="Del" HorizontalAlignment="Left" Margin="11,79,0,0" VerticalAlignment="Top" Width="46" Height="31" FontSize="18" BorderThickness="2" Click="Del_Click">
+        <Button Content="AC" HorizontalAlignment="Left" Margin="11,79,0,0" VerticalAlignment="Top" Width="46" Height="31" FontSize="18" BorderThickness="2" Click="Del_Click">
             <Button.Foreground>
                 <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.WindowColorKey}}"/>
             </Button.Foreground>
