@@ -7,4 +7,12 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="MiniOffice.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="MiniOffice.png" />
+  </ItemGroup>
+
 </Project>

@@ -5,14 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MiniOffice"
         mc:Ignorable="d"
-        Title="Mini Office" Height="450" Width="800">
-    <Grid Margin="10"  Background="LightBlue">
-        <Label Content="Mini Office" HorizontalAlignment="Center" Margin="0,48,0,0" VerticalAlignment="Top" FontSize="20" Foreground="#FF0721FB" RenderTransformOrigin="1.056,0.458"/>
-        <Label Content="Copyright N.Booth 2022 for Mogpie" HorizontalAlignment="Center" Margin="0,90,0,0" VerticalAlignment="Top" Foreground="#FF0721FB" FontSize="16"/>
+        Title="Mini Office" Height="450" Width="796">
+    <Grid Margin="10,10,10,10"  Background="LightBlue">
         <Button x:Name="WordBtn" Content="Text Writer" HorizontalAlignment="Left" Margin="95,155,0,0" VerticalAlignment="Top" BorderBrush="#FF0721FB" Click="WordBtn_Click"/>
         <Button x:Name="CalcBtn" Content="Calculator" HorizontalAlignment="Left" Margin="95,180,0,0" VerticalAlignment="Top" BorderBrush="#FF0721FB" Width="61" Click="CalcBtn_Click"/>
         <Button x:Name="DBaseBtn" Content="Database" HorizontalAlignment="Left" Margin="95,205,0,0" VerticalAlignment="Top" Width="61" BorderBrush="#FF0721FB" Click="DBaseBtn_Click"/>
         <Button x:Name="ExitBtn" Content="Exit" HorizontalAlignment="Left" Margin="95,232,0,0" VerticalAlignment="Top" Width="61" BorderBrush="#FFF50404" Click="ExitBtn_Click"/>
+        <Image HorizontalAlignment="Left" Height="394" Margin="172,0,0,0" VerticalAlignment="Center" Width="471" Source="/MiniOffice.png"/>
 
     </Grid>
 </Window>
