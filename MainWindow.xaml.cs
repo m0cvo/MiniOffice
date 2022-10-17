@@ -32,7 +32,9 @@ namespace MiniOffice
 
         private void DBaseBtn_Click(object sender, RoutedEventArgs e)
         {
-            //ToDo
+            //Opens database schemas window
+            Window4 window4 = new Window4();
+            window4.Show();
         }
 
         private void WordBtn_Click(object sender, RoutedEventArgs e)

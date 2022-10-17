@@ -36,12 +36,19 @@ namespace MiniOffice
 
         private void StockBtn_Click(object sender, RoutedEventArgs e)
         {
-            //ToDo
+            //Product database
+            Stock stock = new Stock();
+            stock.Show();
         }
 
         private void SalesBtn_Click(object sender, RoutedEventArgs e)
         {
             //ToDo
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            this.Close();
         }
     }
 }

@@ -12,6 +12,7 @@
         <Button x:Name="ClientBtn" Content="Client List" HorizontalAlignment="Left" Margin="50,125,0,0" VerticalAlignment="Top" Background="#FFD4CBCB" Foreground="#FF041EF7" Width="140" Height="30" Click="ClientBtn_Click"/>
         <Button x:Name="SalesBtn" Content="Sales List" HorizontalAlignment="Left" Margin="50,195,0,0" VerticalAlignment="Top" Background="#FFD4CBCB" Foreground="#FF041EF7" Width="140" Height="30" Click="SalesBtn_Click"/>
         <Button x:Name="StockBtn" Content="Stock List" HorizontalAlignment="Left" Margin="50,160,0,0" VerticalAlignment="Top" Background="#FFD4CBCB" Foreground="#FF041EF7" Width="140" Height="30" RenderTransformOrigin="0.529,1.9" Click="StockBtn_Click"/>
+        <Button Content="Exit" HorizontalAlignment="Left" Margin="50,230,0,0" VerticalAlignment="Top" Background="#FFD4CBCB" Foreground="#FF041EF7" Width="140" Height="30" Click="Button_Click_1"/>
 
     </Grid>
 </Window>
