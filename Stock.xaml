@@ -11,11 +11,11 @@
         <CollectionViewSource x:Key="categoryProductsViewSource" 
                               Source="{Binding Products, Source={StaticResource categoryViewSource}}"/>
     </Window.Resources>
-    <Grid>
+    <Grid Background="LightBlue">
         <DataGrid x:Name="categoryDataGrid" AutoGenerateColumns="False" 
           EnableRowVirtualization="True" 
           ItemsSource="{Binding Source={StaticResource categoryViewSource}}" 
-          Margin="13,13,43,229" RowDetailsVisibilityMode="VisibleWhenSelected">
+          Margin="13,13,43,229" RowDetailsVisibilityMode="VisibleWhenSelected" Background="LightBlue" BorderBrush="#FF044A8E">
             <DataGrid.Columns>
                 <DataGridTextColumn Binding="{Binding CategoryId}"
                             Header="Category Id" Width="SizeToHeader"
@@ -28,7 +28,7 @@
           EnableRowVirtualization="True" 
           ItemsSource="{Binding Source={StaticResource categoryProductsViewSource}}" 
           Margin="13,205,43,108" RowDetailsVisibilityMode="VisibleWhenSelected" 
-          RenderTransformOrigin="0.488,0.251">
+          RenderTransformOrigin="0.488,0.251" Background="LightBlue" BorderBrush="#FF044A8E">
             <DataGrid.Columns>
                 <DataGridTextColumn Binding="{Binding CategoryId}" 
                             Header="Category Id" Width="SizeToHeader"
@@ -38,6 +38,6 @@
                 <DataGridTextColumn Binding="{Binding Name}" Header="Name" Width="*"/>
             </DataGrid.Columns>
         </DataGrid>
-        <Button x:Name="SaveBtn" Content="Save" HorizontalAlignment="Left" Margin="365,358,0,0" VerticalAlignment="Top" Width="140" Height="30" Click="SaveBtn_Click"/>
+        <Button x:Name="SaveBtn" Content="Save" HorizontalAlignment="Center" Margin="0,358,0,0" VerticalAlignment="Top" Width="140" Height="30" Click="SaveBtn_Click"/>
     </Grid>
 </Window>
