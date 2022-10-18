@@ -33,8 +33,6 @@ namespace MiniOffice
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            // this is for demo purposes only, to make it easier
-            // to get up and running
             _context.Database.EnsureCreated();
 
             // load the entities into EF Core

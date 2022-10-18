@@ -1,0 +1,46 @@
+﻿<Window x:Class="MiniOffice.Clients"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MiniOffice"
+        mc:Ignorable="d"
+        Title="Clients" Height="450" Width="800" Loaded="Window_Loaded">
+    <Window.Resources>
+        <CollectionViewSource x:Key="categoryViewSource"/>
+        <CollectionViewSource x:Key="categoryClientsViewSource" 
+                              Source="{Binding Clients, Source={StaticResource categoryViewSource}}"/>
+    </Window.Resources>
+    <Grid Background="LightBlue" Loaded="Grid_Loaded">
+        <DataGrid x:Name="clientDataGrid" AutoGenerateColumns="False" 
+          EnableRowVirtualization="True" 
+          ItemsSource="{Binding Source={StaticResource categoryViewSource}}" 
+          Margin="13,13,43,229" RowDetailsVisibilityMode="VisibleWhenSelected" Background="LightBlue" BorderBrush="DarkBlue">
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{Binding ClientId}"
+                            Header="Client Id" Width="SizeToHeader"
+                            IsReadOnly="True"/>
+                <DataGridTextColumn Binding="{Binding Name}" Header="Name" 
+                            Width="*"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <DataGrid x:Name="detailsDataGrid" AutoGenerateColumns="False" 
+          EnableRowVirtualization="True" 
+          ItemsSource="{Binding Source={StaticResource categoryClientsViewSource}}" 
+          Margin="13,205,43,108" RowDetailsVisibilityMode="VisibleWhenSelected" 
+          RenderTransformOrigin="0.488,0.251" Background="LightBlue" BorderBrush="DarkBlue">
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{Binding DetailsID}" 
+                            Header="Details Id" Width="SizeToHeader"
+                            IsReadOnly="True"/>
+                <DataGridTextColumn Binding="{Binding ClientId}" Header="Client Id" 
+                            Width="SizeToHeader" IsReadOnly="True"/>
+                <DataGridTextColumn Binding="{Binding Name}" Header="Name" Width="*"/>
+                <DataGridTextColumn Binding="{Binding Company}" Header="Company" Width="*"/>
+                <DataGridTextColumn Binding="{Binding email}" Header="email" Width="*"/>
+                <DataGridTextColumn Binding="{Binding telephone}" Header="Telephone" Width="*"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button Content="Save" HorizontalAlignment="Center" Margin="0,344,0,0" VerticalAlignment="Top" Width="140" Height="30" BorderBrush="DarkBlue" Click="Button_Click"/>
+    </Grid>
+</Window>

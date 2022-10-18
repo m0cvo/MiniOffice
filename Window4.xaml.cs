@@ -31,7 +31,9 @@ namespace MiniOffice
 
         private void ClientBtn_Click(object sender, RoutedEventArgs e)
         {
-            //ToDo
+            //Clients Database
+            Clients clients = new Clients();
+            clients.Show();
         }
 
         private void StockBtn_Click(object sender, RoutedEventArgs e)
