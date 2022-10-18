@@ -7,3 +7,5 @@ It includes a text editor (WP esq) app, a desktop calculator app and a SQL type 
 
 There will be an early release version on github which will be free but may still contain some bugs and then later a full pro release version that will be available in the 
 Microsoft Store.
+
+If any of those collaborating on here would like to make any suggestions please feel free to contact me either through Slack or via email.
