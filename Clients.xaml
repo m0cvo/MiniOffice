@@ -7,14 +7,14 @@
         mc:Ignorable="d"
         Title="Clients" Height="450" Width="800" Loaded="Window_Loaded">
     <Window.Resources>
-        <CollectionViewSource x:Key="categoryViewSource"/>
-        <CollectionViewSource x:Key="categoryClientsViewSource" 
-                              Source="{Binding Clients, Source={StaticResource categoryViewSource}}"/>
+        <CollectionViewSource x:Key="ClientViewSource"/>
+        <CollectionViewSource x:Key="clientsDetailsViewSource" 
+                              Source="{Binding Clients, Source={StaticResource ClientViewSource}}"/>
     </Window.Resources>
-    <Grid Background="LightBlue" Loaded="Grid_Loaded">
+    <Grid Background="LightBlue">
         <DataGrid x:Name="clientDataGrid" AutoGenerateColumns="False" 
           EnableRowVirtualization="True" 
-          ItemsSource="{Binding Source={StaticResource categoryViewSource}}" 
+          ItemsSource="{Binding Source={StaticResource ClientViewSource}}" 
           Margin="13,13,43,229" RowDetailsVisibilityMode="VisibleWhenSelected" Background="LightBlue" BorderBrush="DarkBlue">
             <DataGrid.Columns>
                 <DataGridTextColumn Binding="{Binding ClientId}"
@@ -24,9 +24,9 @@
                             Width="*"/>
             </DataGrid.Columns>
         </DataGrid>
-        <DataGrid x:Name="detailsDataGrid" AutoGenerateColumns="False" 
+        <DataGrid x:Name="detailsDataGrid" AutoGenerateColumns="True" 
           EnableRowVirtualization="True" 
-          ItemsSource="{Binding Source={StaticResource categoryClientsViewSource}}" 
+          ItemsSource="{Binding Source={StaticResource clientsDetailsViewSource}}" 
           Margin="13,205,43,108" RowDetailsVisibilityMode="VisibleWhenSelected" 
           RenderTransformOrigin="0.488,0.251" Background="LightBlue" BorderBrush="DarkBlue">
             <DataGrid.Columns>
@@ -41,6 +41,6 @@
                 <DataGridTextColumn Binding="{Binding telephone}" Header="Telephone" Width="*"/>
             </DataGrid.Columns>
         </DataGrid>
-        <Button Content="Save" HorizontalAlignment="Center" Margin="0,344,0,0" VerticalAlignment="Top" Width="140" Height="30" BorderBrush="DarkBlue" Click="Button_Click"/>
+        <Button Content="Save" HorizontalAlignment="Left" Margin="315,346,0,0" VerticalAlignment="Top" Width="140" Height="30" BorderBrush="DarkBlue" Click="Button_Click"/>
     </Grid>
 </Window>
