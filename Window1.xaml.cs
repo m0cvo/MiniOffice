@@ -49,7 +49,9 @@ namespace MiniOffice
         private void ExitList_Selected(object sender, RoutedEventArgs e)
         {
             MessageBox.Show("Goodbye");
-            Application.Current.Shutdown();
+            MainWindow mainWindow = new MainWindow();
+            mainWindow.Show();
+            this.Hide();
         }
 
         private void SaveTxt_Selected(object sender, RoutedEventArgs e)
@@ -69,6 +71,7 @@ namespace MiniOffice
         {
             Window2 HelpWin = new Window2();
             HelpWin.Show();
+            this.Hide();
         }
     }
 }

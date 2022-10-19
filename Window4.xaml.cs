@@ -26,7 +26,9 @@ namespace MiniOffice
 
         private void StaffBtn_Click(object sender, RoutedEventArgs e)
         {
-            //ToDo
+            //StaffList Database
+            StaffList staffList = new StaffList();
+            staffList.Show();
         }
 
         private void ClientBtn_Click(object sender, RoutedEventArgs e)
@@ -45,7 +47,9 @@ namespace MiniOffice
 
         private void SalesBtn_Click(object sender, RoutedEventArgs e)
         {
-            //ToDo
+            //Sales records Database
+            Sales sales = new Sales();
+            sales.Show();
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)

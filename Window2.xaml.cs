@@ -26,6 +26,8 @@ namespace MiniOffice
 
         private void CloseBtn_Click(object sender, RoutedEventArgs e)
         {
+            Window1 window1 = new Window1();
+            window1.Show();
             this.Close();
         }
     }

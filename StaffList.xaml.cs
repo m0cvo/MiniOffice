@@ -15,11 +15,11 @@ using System.Windows.Shapes;
 namespace MiniOffice
 {
     /// <summary>
-    /// Interaction logic for Clients.xaml
+    /// Interaction logic for StaffList.xaml
     /// </summary>
-    public partial class Clients : Window
+    public partial class StaffList : Window
     {
-        public Clients()
+        public StaffList()
         {
             InitializeComponent();
         }
