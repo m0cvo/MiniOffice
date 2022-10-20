@@ -7,11 +7,11 @@
         mc:Ignorable="d"
         Title="Window2" Height="450" Width="800">
     <Grid>
-        <RichTextBox HorizontalAlignment="Left" Height="287" Margin="10,10,0,0" VerticalAlignment="Top" Width="772" IsReadOnly="True">
+        <RichTextBox HorizontalAlignment="Left" Height="287" Margin="10,10,0,0" VerticalAlignment="Top" Width="772" IsReadOnly="True" TextChanged="RichTextBox_TextChanged">
             <FlowDocument>
                 <Paragraph FontSize="12.6666666666667" FontFamily="Consolas" Margin="0">
                     <Span Foreground="Black">
-                        <Run Text="Notepad 2022 text editor"/>
+                        <Run Text="MiniOffice 2022 text editor"/>
                     </Span>
                 </Paragraph>
                 <Paragraph FontSize="12.6666666666667" FontFamily="Consolas" Margin="0"/>

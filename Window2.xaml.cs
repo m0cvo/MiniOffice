@@ -30,5 +30,10 @@ namespace MiniOffice
             window1.Show();
             this.Close();
         }
+
+        private void RichTextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
     }
 }
