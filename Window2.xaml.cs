@@ -26,14 +26,10 @@ namespace MiniOffice
 
         private void CloseBtn_Click(object sender, RoutedEventArgs e)
         {
+            // Closes the current window and opens the main window
             Window1 window1 = new Window1();
             window1.Show();
             this.Close();
-        }
-
-        private void RichTextBox_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            //
-        }
+        }        
     }
 }
