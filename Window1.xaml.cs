@@ -23,6 +23,7 @@ namespace MiniOffice
     {
         public Window1()
         {
+
             InitializeComponent();
         }
 

@@ -33,7 +33,7 @@ namespace MiniOffice
 
         private void RichTextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
-
+            //
         }
     }
 }
