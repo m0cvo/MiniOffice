@@ -35,7 +35,9 @@
                             IsReadOnly="True"/>
                 <DataGridTextColumn Binding="{Binding ProductId}" Header="Product Id" 
                             Width="SizeToHeader" IsReadOnly="True"/>
-                <DataGridTextColumn Binding="{Binding Name}" Header="Name" Width="*"/>
+                <DataGridTextColumn Binding="{Binding Name}" Header="Name" Width="auto"/>
+                <DataGridTextColumn Binding="{Binding Price}" Header="Price" Width="auto" />
+                <DataGridTextColumn Binding="{Binding Quantity}" Header="Quantity" Width="auto" />
             </DataGrid.Columns>
         </DataGrid>
         <Button x:Name="SaveBtn" Content="Save" HorizontalAlignment="Center" Margin="0,358,0,0" VerticalAlignment="Top" Width="140" Height="30" Click="SaveBtn_Click"/>
